@@ -48,13 +48,15 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
+	right: 40px;
+	position: relative;
 	color: white;
 	background-color: transparent;
 	border: 2px solid crimson;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	margin-top: 30px;
+	margin-top: 80px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
@@ -230,6 +232,8 @@ p {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
+	right: 40px;
+	top: 50px; ;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
@@ -273,14 +277,13 @@ p {
   }
   
   .image-container {
-	width: 400px;
-	height: 400px; 
-	background-image: url('./img/main.jpg'); 
+	width: 40%;
+	height: auto; 
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 	position: absolute;
-	top: calc(50% - 25%); 
-	right: 90px; 
+	top: calc(50% - 37%); 
+	right: 15px; 
 	border-radius: 50%;
 	overflow: hidden;
   }
@@ -412,9 +415,14 @@ p {
 
 
 /* contact Section */
-
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
 #contact .contact-items {
-	
+	/* max-width: 400px; */
 	width: 100%;
 }
 #contact .contact-item {
